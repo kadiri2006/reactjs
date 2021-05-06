@@ -18,16 +18,14 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
-     
-      let IN = () => (
+      let IN = (props) => (
         <span>
-          <h1>{global}</h1>
+          <h1>{props.global}</h1>
         </span>
       );
       let El = () => (
-        let global = "get from global";
-      <div>
-          <IN />
+        <div>
+          <IN global="get from global" />
         </div>
       );
       ReactDOM.render(<El />, document.getElementById("root"));

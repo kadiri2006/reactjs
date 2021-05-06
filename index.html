@@ -18,7 +18,8 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
-      let el = <h1>rcj</h1>;
+      let insert = "inserting variable into jsx";
+      let el = <h1>{insert}</h1>
       ReactDOM.render(el, document.getElementById("root"));
 
       //   el.innerText = "let.. go";

@@ -18,9 +18,9 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
-      let IN = (props) => (
+      let IN = ({ global }) => (
         <span>
-          <h1>{props.global}</h1>
+          <h1>{global}</h1>
         </span>
       );
       let El = () => (

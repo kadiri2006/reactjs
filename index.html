@@ -24,8 +24,9 @@
         </span>
       );
       let El = () => (
+        let value = "get from global";
         <div>
-          <IN global="get from global" />
+          <IN global={value} />
         </div>
       );
       ReactDOM.render(<El />, document.getElementById("root"));

@@ -18,18 +18,18 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
-     let global = "get from global";
-     let IN = () => (
+      let global = "get from global";
+      let IN = () => (
         <span>
           <h1>{global}</h1>
         </span>
       );
-      let el = (
+      let El = () => (
         <div>
           <IN />
         </div>
       );
-      ReactDOM.render(el, document.getElementById("root"));
+      ReactDOM.render(<El />, document.getElementById("root"));
     </script>
   </body>
 </html>

@@ -18,14 +18,15 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
-      let global = "get from global";
+     
       let IN = () => (
         <span>
           <h1>{global}</h1>
         </span>
       );
       let El = () => (
-        <div>
+        let global = "get from global";
+      <div>
           <IN />
         </div>
       );

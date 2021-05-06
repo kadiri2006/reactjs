@@ -12,13 +12,13 @@
       src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
       crossorigin
     ></script>
-
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div id="root"></div>
-    <script>
-      let el = React.createElement("h1", null, "rjs");
+    <script type="text/babel">
+      let el = <h1>rcj</h1>;
       ReactDOM.render(el, document.getElementById("root"));
 
       //   el.innerText = "let.. go";

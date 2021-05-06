@@ -18,22 +18,18 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
-      let IN = () => {
-        return (
-          <span>
-            <h1>use jsx as tag for rendering and  return jsx</h1>
-          </span>
-        );
-      };
+      let IN = () => (
+        <span>
+          <h1>self closing tag</h1>
+        </span>
+      );
       let el = (
         <div>
-          <IN></IN>
+          <IN />
         </div>
       );
-      ReactDOM.render(el, document.getElementById("root"));
 
-      //   el.innerText = "let.. go";
-      // root.appendChild(el);
+      ReactDOM.render(el, document.getElementById("root"));
     </script>
   </body>
 </html>

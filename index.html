@@ -18,12 +18,18 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
-      let IN =()=>(
-        <span>
-          <h1>use jsx as tag for rendering</h1>
-        </span>
+      let IN = () => {
+        return (
+          <span>
+            <h1>use jsx as tag for rendering and  return jsx</h1>
+          </span>
+        );
+      };
+      let el = (
+        <div>
+          <IN></IN>
+        </div>
       );
-      let el = <div><IN></IN></div>;
       ReactDOM.render(el, document.getElementById("root"));
 
       //   el.innerText = "let.. go";

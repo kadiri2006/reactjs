@@ -18,12 +18,12 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
-      let insert = (
+      let IN =()=>(
         <span>
-          <h1>inserting jsx into other jsx</h1>
+          <h1>use jsx as tag for rendering</h1>
         </span>
       );
-      let el = <div>{insert}</div>;
+      let el = <div><IN></IN></div>;
       ReactDOM.render(el, document.getElementById("root"));
 
       //   el.innerText = "let.. go";

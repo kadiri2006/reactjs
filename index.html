@@ -23,12 +23,14 @@
           <h1>{global}</h1>
         </span>
       );
-      let El = () => (
+      let El = () => {
         let value = "get from global";
-        <div>
-          <IN global={value} />
-        </div>
-      );
+        return (
+          <div>
+            <IN global={value} />
+          </div>
+        );
+      };
       ReactDOM.render(<El />, document.getElementById("root"));
     </script>
   </body>
